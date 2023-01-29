@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ticket Booking</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+      <br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-5"></div>
+        <div class="col-lg-6">
+            <form action="success.html">
+                <label for="name" class="col-sm-1 col-form-label">Name</label>
+                <div class="col-lg-4">
+                    <input type="text" required>
+                </div>
+                <label for="Email" class="col-sm-1 col-form-label">Email</label>
+                <div class="col-lg-5">
+                    <input type="email" required>
+                </div>
+                <label for="number" class="col-sm-2 col-form-label">Phone number</label>
+                <div class="input-group col-lg-">
+                    <span class="input-group-text">+91</span>
+                    <input type="number" required>
+                </div>
+                <label class="col-sm-1 col-form-label">Gender</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Female
+                    </label>
+                </div>
+            <label class="col-sm-2 col-form-label">City</label>
+            <div class="col-sm-4 col-lg-4">
+                <div class="form-floating">
+                    <input class="form-control" list="datalistOptions" placeholder="Enter City..." required>
+                        <datalist id="datalistOptions">
+                            <option value="Gandhinagar">
+                            <option value="Ahmedabad">
+                            <option value="Surat">
+                        </datalist>
+                    </div>
+            </div>
+                <label class="col-sm-2 col-form-label">Select Movies</label>
+                <div class="input-group">
+                    <div class="col-lg-4">
+                        <div class="form-floating">
+                            <select class="form-select">
+                                <option selected>Movie</option>
+                                <option value="1">Akhanda</option>
+                                <option value="2">Avatar</option>
+                                <option value="3">Drishyam 2</option>
+                                <option value="4">Kuttey</option>
+                                <option value="5">Lakiro</option>
+                                <option value="6">Varisu</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                    <label for="number" class="col-sm-2 col-form-label">No. Of Ticket Book</label>
+                    <div class="input-group col-lg-">
+                    <input type="number" required>
+                </div>
+                <br>
+                <br>
+                <button class="btn btn-outline-secondary">
+                    Book Ticket
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+  </html>

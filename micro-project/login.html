@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <Br>
+    <div class="card mx-auto" style="width: 30%;">
+        <article class="card-body">
+          <h4 class="card-title text-center mb-4 mt-1">Login</h4>
+          <hr>
+          <form>
+          <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="bi bi-envelope-at"></i> </span>
+             </div>
+            <input type="email" name="email" class="form-control" placeholder="Email" required>
+          </div> <!-- input-group.// -->
+          <br>
+          </div> <!-- form-group// -->
+          <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="bi bi-key-fill"></i> </span>
+             </div>
+              <input class="form-control" placeholder="Password" type="password" required>
+          </div> <!-- input-group.// -->
+          <br>
+          </div> <!-- form-group// -->
+              <div class="text-center">
+                <button type="button" class="btn btn-primary" onclick="" data-bs-toggle="modal" data-bs-target="#exampleModalDefault"> Login  </button>
+                </div>
+          <!-- form-group// -->
+          <div class="text-center"><a href="#" class="btn" data-bs-target="#pwdModal" data-bs-toggle="modal">Forgot password?</a></div>
+          </form>
+        </article>
+        </div>
+        <div class="modal fade" id="exampleModalDefault" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">You Are Successfully Logged In</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h1 class="text-center">Forgot Password</h1>
+              </div>
+              <div class="modal-body">
+                  <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="text-center">
+                                  <p>If you have forgotten your password you can reset it here.</p>
+                                    <div class="panel-body">
+                                        <fieldset>
+                                            <div class="form-group">
+                                                <input class="form-control input-lg" placeholder="E-mail Address" name="email" type="email">
+                                            </div>
+                                            <br>
+                                            <input class="btn btn-lg btn-primary btn-block" value="Send Password" type="submit">
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+          </div>
+          </div>
+        </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+  </html>
